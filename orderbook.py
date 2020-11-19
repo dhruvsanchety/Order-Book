@@ -176,7 +176,7 @@ def run(inputPath):
             size = row['size']
             current = Node(side,order_id,price,size,size)
             
-            #Excute
+            #Execute
             trades(current,other(side),heap,id_dictionary,price_dictionary,trades_lines)
             #Add to order book if size>0
             insert(current,side,heap,id_dictionary,price_dictionary)
